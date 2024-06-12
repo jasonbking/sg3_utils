@@ -4855,7 +4855,7 @@ show_stats_perform_pages(const uint8_t * resp, int len,
                         "group_statistics_and_performance_log_parameters");
     }
     if (0 == subpg_code) { /* General statistics and performance log page */
-        if (num < 0x5c)
+        if (num < 0x44)
             return false;
         for (k = num; k > 0; k -= extra, bp += extra) {
             unsigned int ui;
